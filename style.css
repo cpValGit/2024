@@ -1,0 +1,76 @@
+/* Base */
+body {
+  background-color: #0a0a0a; /* Dark background for the pirate/code editor theme */
+  color: #f8f8f2; /* Light text for readability */
+  font-family: "Courier New", monospace; /* Coding vibe with a monospace font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff; /* Bright white for headers */
+  font-family: "Pirates Two", sans-serif; /* Imaginary pirate-themed font, replace with actual if exists */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #121212; /* Slightly lighter dark shade for contrast */
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2; /* Light grey for nav links */
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd; /* Light background on hover */
+  color: black; /* Dark text on hover */
+}
+
+/* Main content area */
+.main {
+  padding: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: #222; /* Dark footer */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Buttons */
+.button {
+  background-color: #f14e32; /* Bright red, pirate flag vibe */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #c53d1f; /* Darker shade on hover */
+}
