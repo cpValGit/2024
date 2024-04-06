@@ -1,0 +1,49 @@
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin-bottom: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px;
+  position: relative; /* Allows absolute positioning of the arrow inside */
+}
+
+/* Arrow styles */
+.collapsible:after {
+  content: "\25b6"; /* Right-pointing arrow */
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.collapsible.active:after {
+  content: "\25bc"; /* Downward-pointing arrow */
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-bottom: 15px; /* Spacing between multiple collapsible elements */
+  border-radius: 4px;
+}
+
+.code-snippet {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  overflow-x: auto;
+}

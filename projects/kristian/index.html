@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kristians Ø</title>
+  </head>
+  <body>
+    <h3>Hej og velkommen til Kristians Ø</h3>
+    <p>Her kan du finde inspiration til din egen ø!</p>
+
+    <button type="button" class="collapsible">Lav en HTML fil</button>
+    <div class="content">
+      <p>
+        En HTML fil er den fil der fortæller din internet browser som google
+        chrome, hvordan hjemmesiden skal se ud.
+      </p>
+      <p>Du skal lave en fil der hedder f.eks. index.html</p>
+      <div class="code-snippet">
+        <p>Du skal lave dette i din HTML fil</p>
+        <code
+          ><code>
+            &lt;!DOCTYPE html&gt; 
+            </code><br/>
+        </code>
+        <code>
+            &lt;html lang="en"&gt; 
+
+        </code>
+        <br/>
+        <code>
+            &lt;head&gt;
+
+        </code>
+        <br/>
+            <code>
+             &lt;meta charset="UTF-8"&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+             </code>
+             <br/>
+
+             <code>
+&lt;title&gt;Document&lt;/title&gt;
+             </code>
+             <br/>
+            
+                       <code>
+&lt;/head&gt;
+             </code>
+             <br/>
+             
+                        <code>
+&lt;body&gt;&lt;&gt; 
+             </code>
+             <br/>
+            
+                       <code>
+  &lt;/body&gt; 
+             </code>
+             <br/>
+          
+                       <code>
+&lt;/html&gt;
+             </code>
+             <br/>
+          </code></code
+        >
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">Lav en overskrift</button>
+    <div class="content">
+      <h1>Sådan kan en overskrift se ud</h1>
+      <div class="code-snippet">
+        <p>Du skal lave dette i din HTML fil</p>
+        <code> &lt;h1&gt;Sådan kan en overskrift se ud&lt;/h1&gt; </code>
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">Lav en sætning</button>
+    <div class="content">
+      <p>Sådan kan en sætning se ud</p>
+      <div class="code-snippet">
+        <p>Du skal lave dette i din HTML fil</p>
+        <code> &lt;p&gt;Sådan kan en sætning se ud&lt;p&gt; </code>
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">Open Code Snippet</button>
+    <div class="content">
+      <div class="code-snippet">
+        <code>// Your code snippet here</code><br />
+        <code>console.log("Hello, world!");</code>
+      </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
